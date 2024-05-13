@@ -26,14 +26,20 @@ int main(int argc, char *argv[]){
 		r = _div(atof(a), atof(b));
 		printf("%lf\n", r);
 	}
-	else if (strcmp(op, "sqr") == 0) {
+
+	else {printf("Erreur de parametres");}
+	}
+	else {
+		char* op = argv[1];
+		char* a = argv[2];
+		double r = 0;
+		if (strcmp(op, "sqr") == 0) {
 		r = _sqr(atof(a));
 		printf("%lf\n", r);
-		
+		}else{
+			printf("Erreur de parametres");
+		}
 	}
-	else {printf("Erreur de parametres");}
-	}
-	else {printf("Erreur de parametres");}
 	return 0;
 }
 
