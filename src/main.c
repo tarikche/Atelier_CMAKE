@@ -26,6 +26,10 @@ int main(int argc, char *argv[]){
 		r = _div(atof(a), atof(b));
 		printf("%lf",r);
 	}
+	else if (strcmp(op, "sqr") == 0) {
+		r = _mul(atof(a), atof(a));
+		printf("%lf",r);
+	}
 	else {printf("Erreur de parametres");}
 	}
 	else {printf("Erreur de parametres");}
